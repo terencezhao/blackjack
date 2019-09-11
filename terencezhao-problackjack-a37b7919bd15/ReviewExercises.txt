@@ -1,0 +1,38 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R13.1 Terms
+Define the terms
+a. Recursion : A technique for solving a problem by using the solution to the same problem with simpler inputs.
+b. Iteration : The repetition of a procedure applied multiple times in order to move closer to the solution of a problem.
+c. Infinite recursion : A never ending cycle of a method calling itself that happens either because the arguments don't get simpler or because a special terminating case is missing.
+d. Recursive helper method : A method that is more amenable to a recursive solution and is equivalent to the original problem
+
+R13.2 Smallest value
+Outline, but do not implement, a recursive solution for finding the smallest value in an array.
+Given an array of values
+if there is only one element
+    it is the smallest
+else
+    take the smaller of the first element of the array and the smallest value of the rest of the array.
+
+R13.3 Sort array of numbers
+Outline, but do not implement, a recursive solution for sorting an array of numbers. Hint: First find the smallest value in the array.
+Given an array of values
+Create an array of equal size called "sorted"
+find the smallest value in the array, remove it from the array and add it to the sorted array
+sort the rest of the values and add them all to the sorted array
+
+R13.6 Exponents recursively
+Write a recursive definition of x^n, where n >= 0, similar to the recursive definition of the Fibonacci numbers. Hint: How do you compute x^n from x^(n – 1)? How does the recursion terminate?
+if n is 0, then x^n is 1
+else x^n is x^(n - 1) * x
+
+R13.8 Factorial recursively
+Write a recursive definition of n! = 1 * 2 * ... * n, similar to the recursive definition of the Fibonacci numbers.
+if n is 0 then n! is 1
+else n! is equal to n * (n - 1)
+
+
+
